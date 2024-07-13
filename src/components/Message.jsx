@@ -1,6 +1,6 @@
-export const Message = ({msg,classname}) =>{
+export const Message = ({msg,classname,value=""}) =>{
     const myclassname = `${classname}  text-center`
     return(<h2 className={myclassname}>
-        {msg}
+        {msg}{value}
     </h2>)
 }

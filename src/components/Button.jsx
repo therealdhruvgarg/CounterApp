@@ -1,5 +1,9 @@
-export const Button = ({val,classname}) =>{
+export const Button = ({val,classname,fn}) =>{
+    const clicked = ()=>{
+        fn(val);
+        console.log("Button Clicked",val);
+    }
     return(
-        <button className={classname}>{val}</button>
+        <button onClick={clicked} className={classname}>{val}</button>
     )
 }
