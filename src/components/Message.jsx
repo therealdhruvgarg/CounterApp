@@ -1,5 +1,6 @@
 export const Message = ({msg,classname}) =>{
-    return(<h2 className={classname}>
+    const myclassname = `${classname}  text-center`
+    return(<h2 className={myclassname}>
         {msg}
     </h2>)
 }
