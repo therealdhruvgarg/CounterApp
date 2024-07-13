@@ -1,8 +1,11 @@
 //now write the first component
 //arrow function
+
 const App = () =>{
-  return(
-    <h1>Hello ReactJS!!</h1>
-  )
+    return(
+        <div>
+        <h1>Counter App</h1>
+        </div>
+    )
 }
 export default App;

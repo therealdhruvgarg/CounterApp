@@ -2,7 +2,7 @@
 Bridge File Between App.js and index.html
 By using ReactDOM VDOM convert DOM
 */
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 const div = document.querySelector('#root'); //DOM
 const root =ReactDOM.createRoot(div); //VDOM
