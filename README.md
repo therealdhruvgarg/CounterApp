@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Counter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple counter application built with React. It allows users to increment and decrement a counter value by clicking buttons.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+You can view a live demo of the app [here](https://counterapp-neon.vercel.app/).
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+.
+├── components
+│   ├── Button.jsx
+│   └── Message.jsx
+├── pages
+│   └── Counter.jsx
+├── public
+├── styles
+├── README.md
+└── package.json
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Components
 
-### `npm test`
+- **Button.jsx**: This component renders a button and handles click events to update the counter value.
+- **Message.jsx**: This component displays messages, including the current counter value.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pages
 
-### `npm run build`
+- **Counter.jsx**: This page contains the main logic for the counter, including state management and rendering the Button and Message components.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Run Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/counter-app.git
+cd counter-app
+```
 
-### `npm run eject`
+2. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Run the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Open your browser and navigate to `http://localhost:3000` to see the app.
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This app is deployed using [Vercel](https://vercel.com/). To deploy your own version:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Install the Vercel CLI:
 
-### Code Splitting
+```bash
+npm install -g vercel
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Deploy the app:
 
-### Analyzing the Bundle Size
+```bash
+vercel
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Follow the prompts to link your Vercel account and deploy the project.
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React
+- JavaScript
+- Vercel
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
