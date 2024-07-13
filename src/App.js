@@ -1,10 +1,13 @@
 //now write the first component
 //arrow function
 
+import { Counter } from "./pages/Counter";
+
 const App = () =>{
     return(
         <div>
-        <h1>Counter App</h1>
+       <Counter/>
+
         </div>
     )
 }
