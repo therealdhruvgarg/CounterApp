@@ -4,7 +4,6 @@ import { Message } from "../components/Message.jsx";
 
 export const Counter  = ()=>{
     const [count,setCount] = useState(0);
-    //let count = 0;
     const updateCount = (val)=>{
         if(val === '+')
           {
@@ -13,7 +12,6 @@ export const Counter  = ()=>{
         else {
             setCount(count - 1);
         }
-        console.log('Count is ',count);
     }
     return(
         <div className="container">

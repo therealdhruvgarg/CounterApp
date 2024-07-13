@@ -1,6 +1,3 @@
-//now write the first component
-//arrow function
-
 import { Counter } from "./pages/Counter";
 
 const App = () =>{
